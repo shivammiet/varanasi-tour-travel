@@ -30,24 +30,37 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   keywords: siteConfig.keywords,
   authors: [{ name: siteConfig.name }],
+
   openGraph: {
     title: `${siteConfig.name} | Premium Varanasi Tour & Travel Packages`,
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
-    images: [{ url: siteConfig.ogImage, width: 1200, height: 630 }],
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+      },
+    ],
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} | Premium Varanasi Tour & Travel Packages`,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
   },
+
   robots: {
     index: true,
     follow: true,
+  },
+
+  verification: {
+    google: "dIKkSFM3l4Z04TfJaA06F48yfB-rynQ4TQLxFWDs_Zc",
   },
 };
 
@@ -61,7 +74,9 @@ export default function RootLayout({
       <body className="font-body antialiased">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd()) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessJsonLd()),
+          }}
         />
         <Header />
         <main>{children}</main>
