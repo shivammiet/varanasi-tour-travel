@@ -6,7 +6,7 @@ export const siteConfig = {
   tagline: "Walk the Ghats. Witness the Eternal Flame.",
   description:
     "Kashi Yatra Tours is a premium Varanasi tour and travel company offering curated spiritual journeys, Ganga Aarti experiences, sunrise boat rides, and heritage sightseeing across Varanasi, Sarnath, Ayodhya, and Prayagraj.",
-  url: "https://www.kashiyatratours.com",
+  url:  "https://varanasi-tour-travel.vercel.app",
   ogImage: "/images/hero.jpg",
   keywords: [
     "Varanasi tour packages",
