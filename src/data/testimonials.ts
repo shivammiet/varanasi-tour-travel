@@ -2,8 +2,8 @@ import { Testimonial } from "@/types";
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Ananya Sharma",
-    location: "Mumbai, India",
+    name: "Divyani Jha",
+    location: "MP, India",
     rating: 5,
     review:
       "The sunrise boat ride was worth waking up at 4:30 AM for. Our guide knew the history of every ghat we passed. Booking on WhatsApp was so easy — no forms, no fuss.",

@@ -22,16 +22,16 @@ export const siteConfig = {
     phone: "+91 9118958565",
     phoneRaw: "+919118958565",
     whatsapp: "9118958565",
-    email: "shivamwalther@gmail.com", // Aapka email
+    email: "shivamwalther@gmail.com", 
     address: "D-12/45, Near Dashashwamedh Ghat, Varanasi, Uttar Pradesh 221001, India",
     mapEmbedUrl:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.994!2d83.0068!3d25.3109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE4JzM5LjYiTiA4M8KwMDAnMjQuNSJF!5e0!3m2!1sen!2sin!4v1620000000000",
     mapsLink: "https://maps.google.com/?q=Dashashwamedh+Ghat+Varanasi",
   },
   social: {
-    instagram: "https://instagram.com/divineyatratours", // <-- Yeh update kiya hai
-    facebook: "https://facebook.com/divineyatratours",   // <-- Yeh update kiya hai
-    youtube: "https://youtube.com/@divineyatratours",    // <-- Yeh update kiya hai
+    instagram: "https://instagram.com/divineyatratours", 
+    facebook: "https://facebook.com/divineyatratours",   
+    youtube: "https://youtube.com/@divineyatratours",    
   },
   hours: "Available daily, 6:00 AM – 10:00 PM IST",
 };

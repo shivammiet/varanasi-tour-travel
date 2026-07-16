@@ -22,6 +22,26 @@ export const attractions: Attraction[] = [
     timeNeeded: "1 hour",
   },
   {
+    slug: "ram-janmabhoomi-ayodhya",
+    name: "Ram Janmabhoomi, Ayodhya",
+    image: "/images/avatars/Ayodha.jpg", 
+    shortDescription: "The sacred birthplace of Lord Ram and the grand Ram Mandir.",
+    description:
+      "Ayodhya is the spiritual heart of the Ramayana. The newly built grand Ram Mandir at the Ram Janmabhoomi site attracts millions of devotees. The city is also famous for Hanuman Garhi and the serene evening aarti at the Saryu River ghats.",
+    bestTimeToVisit: "Early morning for darshan",
+    timeNeeded: "3–4 hours",
+  },
+  {
+    slug: "triveni-sangam-prayagraj",
+    name: "Triveni Sangam, Prayagraj",
+    image: "/images/prayag.jpeg",
+    shortDescription: "The holy confluence of the Ganga, Yamuna, and Saraswati rivers.",
+    description:
+      "Located in Prayagraj, the Triveni Sangam is one of the most sacred pilgrimage destinations in Hinduism. Taking a holy dip here is believed to wash away sins. You can take a boat ride to the exact point where the differently colored waters of the rivers meet.",
+    bestTimeToVisit: "Early morning",
+    timeNeeded: "2–3 hours",
+  },
+  {
     slug: "assi-ghat",
     name: "Assi Ghat",
     image: "/images/sunrise-ghat.jpg",
@@ -52,26 +72,8 @@ export const attractions: Attraction[] = [
     bestTimeToVisit: "30 minutes before sunrise",
     timeNeeded: "1 hour",
   },
-  {
-    slug: "triveni-sangam-prayagraj",
-    name: "Triveni Sangam, Prayagraj",
-    image: "/images/prayag.jpeg",
-    shortDescription: "The holy confluence of the Ganga, Yamuna, and Saraswati rivers.",
-    description:
-      "Located in Prayagraj, the Triveni Sangam is one of the most sacred pilgrimage destinations in Hinduism. Taking a holy dip here is believed to wash away sins. You can take a boat ride to the exact point where the differently colored waters of the rivers meet.",
-    bestTimeToVisit: "Early morning",
-    timeNeeded: "2–3 hours",
-  },
-  {
-    slug: "ram-janmabhoomi-ayodhya",
-    name: "Ram Janmabhoomi, Ayodhya",
-    image: "/images/avatars/Ayodha.jpg", 
-    shortDescription: "The sacred birthplace of Lord Ram and the grand Ram Mandir.",
-    description:
-      "Ayodhya is the spiritual heart of the Ramayana. The newly built grand Ram Mandir at the Ram Janmabhoomi site attracts millions of devotees. The city is also famous for Hanuman Garhi and the serene evening aarti at the Saryu River ghats.",
-    bestTimeToVisit: "Early morning for darshan",
-    timeNeeded: "3–4 hours",
-  }
+  
+  
 ];
 
 export function getAttractionBySlug(slug: string): Attraction | undefined {

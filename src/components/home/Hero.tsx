@@ -10,7 +10,6 @@ import { FlameIcon } from "@/components/ui/FlameIcon";
 import { GhatDivider } from "@/components/ui/GhatDivider";
 import { whatsappLink, telLink } from "@/data/site";
 
-// Updated exactly with the images you provided
 const slides = [
   {
     image: "/images/boat-ride.jpg",
@@ -21,7 +20,7 @@ const slides = [
     caption: "Sunrise Over the Ghats of Varanasi",
   },
   {
-    image: "/images/sunrise-ghat.jpg",
+    image: "/images/kashii.jpg",
     caption: "A Boatman on the Ganga at Dusk",
   },
   {
@@ -45,7 +44,8 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-[92vh] items-end overflow-hidden bg-indigo">
+    // FIX 1: Responsive Height (85vh for mobile, 92vh for desktop)
+    <section className="relative flex min-h-[85vh] md:min-h-[92vh] items-end overflow-hidden bg-indigo">
       <AnimatePresence mode="sync">
         <motion.div
           key={index}
@@ -60,15 +60,16 @@ export function Hero() {
             alt={slides[index].caption}
             fill
             priority={index === 0}
-            className="object-cover"
+            // FIX 2: Added object-center to keep focus in the middle on mobile
+            className="object-cover object-center"
             sizes="100vw"
           />
-          {/* Enhanced Gradient for better text readability and premium feel */}
           <div className="absolute inset-0 bg-gradient-to-t from-indigo-dark via-indigo-dark/70 to-black/40" />
         </motion.div>
       </AnimatePresence>
 
-      <Container className="relative z-10 pb-28 pt-40">
+      {/* FIX 3: Responsive Padding (Less padding on mobile) */}
+      <Container className="relative z-10 pb-20 pt-32 md:pb-28 md:pt-40">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -79,7 +80,6 @@ export function Hero() {
             <FlameIcon className="h-4 w-4 text-saffron" />
             Kashi & Ayodhya
           </span>
-          {/* New Discount Promo Badge */}
           <span className="inline-flex animate-pulse items-center gap-1.5 rounded-full bg-green-500/20 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-green-300 border border-green-400/30 backdrop-blur">
             <Sparkles className="h-3.5 w-3.5" />
             Flat 10% Off via WhatsApp
@@ -90,7 +90,8 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="mt-6 max-w-4xl font-display text-5xl font-bold leading-[1.1] text-white sm:text-6xl lg:text-7xl drop-shadow-lg"
+          // FIX 4: Responsive Text Size (text-4xl on mobile, text-6xl/7xl on larger screens)
+          className="mt-6 max-w-4xl font-display text-4xl font-bold leading-[1.1] text-white sm:text-6xl lg:text-7xl drop-shadow-lg"
         >
           Journey to the Heart <br className="hidden sm:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-saffron-light to-gold-light">
@@ -102,7 +103,8 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-6 max-w-xl text-lg text-white/90 font-medium leading-relaxed drop-shadow-md"
+          // FIX 5: Slightly smaller text on mobile
+          className="mt-4 md:mt-6 max-w-xl text-base md:text-lg text-white/90 font-medium leading-relaxed drop-shadow-md"
         >
           Experience curated spiritual tours across Varanasi, Ayodhya, and Prayagraj. Zero stress, no hidden fees. Message us directly for local B2B rates and seamless planning.
         </motion.p>
@@ -111,41 +113,41 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-10 flex flex-wrap gap-4 items-center"
+          className="mt-8 md:mt-10 flex flex-wrap gap-3 md:gap-4 items-center"
         >
-          {/* Upgraded WhatsApp Button with Glow */}
           <Button
             href={whatsappLink("Namaste! I'd like to plan a tour and claim my 10% discount.")}
             target="_blank"
             variant="whatsapp"
-            className="shadow-[0_0_20px_rgba(34,197,94,0.3)] hover:shadow-[0_0_25px_rgba(34,197,94,0.5)] transition-all duration-300"
+            className="shadow-[0_0_20px_rgba(34,197,94,0.3)] hover:shadow-[0_0_25px_rgba(34,197,94,0.5)] transition-all duration-300 w-full sm:w-auto"
             icon={<MessageCircle className="h-5 w-5" />}
           >
             Claim 10% Off on WhatsApp
           </Button>
-          <Button 
-            href="/packages" 
-            variant="outline" 
-            className="!bg-white/10 !text-white !border-white/30 hover:!bg-white/20 hover:!border-saffron-light hover:!text-white backdrop-blur transition-all"
-          >
-            View Packages
-          </Button>
-          <Button 
-            href={telLink()} 
-            variant="ghost" 
-            className="!text-white/80 hover:!text-white hover:bg-white/10" 
-            icon={<PhoneCall className="h-4 w-4" />}
-          >
-            Call Us
-          </Button>
+          <div className="flex gap-3 w-full sm:w-auto">
+            <Button 
+              href="/packages" 
+              variant="outline" 
+              className="flex-1 sm:flex-none !bg-white/10 !text-white !border-white/30 hover:!bg-white/20 hover:!border-saffron-light hover:!text-white backdrop-blur transition-all"
+            >
+              View Packages
+            </Button>
+            <Button 
+              href={telLink()} 
+              variant="ghost" 
+              className="flex-1 sm:flex-none !text-white/80 hover:!text-white hover:bg-white/10" 
+              icon={<PhoneCall className="h-4 w-4" />}
+            >
+              Call Us
+            </Button>
+          </div>
         </motion.div>
 
-        {/* Dynamic Slide Caption Display */}
         <motion.p
           key={`caption-${index}`}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="mt-12 text-sm font-medium tracking-wide text-white/60"
+          className="mt-8 md:mt-12 text-xs md:text-sm font-medium tracking-wide text-white/60"
         >
           Currently viewing: {slides[index].caption}
         </motion.p>
