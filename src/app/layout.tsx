@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/config/site"; // Naya wala site config
+import { siteConfig } from "@/data/site"; 
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
 
   verification: {
-    google: "dIKkSFM3l4Z04TfJaA06F48yfB-rynQ4TQLxFWDs_Zc", // Aapka exact Google Search Console tag!
+    google: "dIKkSFM3l4Z04TfJaA06F48yfB-rynQ4TQLxFWDs_Zc",
   },
 
   openGraph: {
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: "/images/hero.jpg", // Setting hero image as default preview thumbnail
+        url: "/images/hero.jpg",
         width: 1200,
         height: 630,
       },
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     images: ["/images/hero.jpg"],
   },
 };
-
+//fix status
 export default function RootLayout({
   children,
 }: Readonly<{
