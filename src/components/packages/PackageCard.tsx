@@ -35,13 +35,25 @@ export function PackageCard({ pkg }: { pkg: TourPackage }) {
           {pkg.summary}
         </p>
 
-        <div className="mt-4 flex items-baseline gap-1">
-          <span className="text-xs text-ink/50">Starting from</span>
-          <span className="font-display text-2xl font-bold text-indigo">
-            ₹{pkg.startingPrice.toLocaleString("en-IN")}
-          </span>
-          <span className="text-xs text-ink/50">{pkg.priceUnit}</span>
-        </div>
+        {/* Dynamic Pricing Section */}
+        {pkg.startingPrice === 0 ? (
+          <div className="mt-4 flex flex-col items-start gap-1">
+            <span className="inline-flex animate-pulse items-center rounded bg-green-100 px-2 py-0.5 text-xs font-extrabold text-green-800 border border-green-200">
+              🔥 FLAT 10% OFF!
+            </span>
+            <span className="font-display text-lg font-bold text-indigo">
+              
+            </span>
+          </div>
+        ) : (
+          <div className="mt-4 flex items-baseline gap-1">
+            <span className="text-xs text-ink/50">Starting from</span>
+            <span className="font-display text-2xl font-bold text-indigo">
+              ₹{pkg.startingPrice.toLocaleString("en-IN")}
+            </span>
+            <span className="text-xs text-ink/50">{pkg.priceUnit}</span>
+          </div>
+        )}
 
         <div className="mt-5 flex flex-col gap-2 sm:flex-row">
           <Button
@@ -53,7 +65,7 @@ export function PackageCard({ pkg }: { pkg: TourPackage }) {
             View Details
           </Button>
           <Button
-            href={whatsappLink(`Namaste! I'm interested in the "${pkg.title}" package.`)}
+            href={whatsappLink(`Namaste! I'm interested in the "${pkg.title}" package. Please share the discounted price!`)}
             target="_blank"
             variant="whatsapp"
             className="flex-1 !px-4"

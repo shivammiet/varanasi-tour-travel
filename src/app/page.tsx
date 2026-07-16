@@ -11,7 +11,7 @@ import { faqJsonLd } from "@/lib/jsonld";
 import { faqs } from "@/data/faq";
 
 export const metadata = buildMetadata({
-  title: "Kashi Yatra Tours | Premium Varanasi Tour & Travel Packages",
+  title: "Divine Yatra Tours | Premium Varanasi Tour & Travel Packages",
   description:
     "Book Varanasi tour packages for Ganga Aarti, Kashi Vishwanath Temple, Sarnath, sunrise boat rides, and more. Simple WhatsApp booking, no login required.",
   path: "/",

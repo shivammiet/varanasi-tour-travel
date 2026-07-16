@@ -8,7 +8,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "About Us",
   description:
-    "Learn about Kashi Yatra Tours — a Varanasi-based travel team offering curated, guide-led tours of the ghats, temples, and spiritual heart of Kashi.",
+    "Learn about Divine Yatra Tours — a Varanasi-based travel team offering curated, guide-led tours of the ghats, temples, and spiritual heart of Kashi.",
   path: "/about",
 });
 
@@ -35,7 +35,7 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="Our Story"
-        title="About Kashi Yatra Tours"
+        title="About Divine Yatra Tours"
         description="A local team dedicated to showing you Varanasi the way it deserves to be seen."
         image="/images/varanasi-city.jpg"
       />
@@ -48,7 +48,7 @@ export default function AboutPage() {
               title="A Small Team That Knows Every Ghat by Name"
             />
             <p className="mt-6 text-base leading-relaxed text-ink/75">
-              Kashi Yatra Tours began with a simple idea: travellers visiting
+              Divine Yatra Tours began with a simple idea: travellers visiting
               Varanasi deserve guides who actually live here — who know which
               ghat gets the best light at sunrise, which lane leads to the
               best kachori shop, and how to move respectfully through a

@@ -1,4 +1,4 @@
-# Kashi Yatra Tours — Varanasi Tour & Travel Website
+# Divine Yatra Tours — Varanasi Tour & Travel Website
 
 A premium, fully responsive static website for a Varanasi tour and travel
 business, built with **Next.js 15 (App Router)**, **TypeScript**, **Tailwind

@@ -8,7 +8,7 @@ import { packages } from "@/data/packages";
 export const metadata = buildMetadata({
   title: "Varanasi Tour Packages",
   description:
-    "Browse Varanasi tour packages including 1-day and 2-day tours, Varanasi + Sarnath, Ayodhya, and Prayagraj combos, the Spiritual Kashi Yatra, and the Sunrise Boat Ride Experience.",
+    "Browse Varanasi tour packages including 1-day and 2-day tours, Varanasi + Sarnath, Ayodhya, and Prayagraj combos, the Spiritual Divine Yatra, and the Sunrise Boat Ride Experience.",
   path: "/packages",
 });
 

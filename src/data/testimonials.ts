@@ -42,8 +42,8 @@ export const testimonials: Testimonial[] = [
     location: "Chennai, India",
     rating: 4,
     review:
-      "The Spiritual Kashi Yatra gave us so much more context than a regular sightseeing tour. The pandit-assisted puja at the ghat was a highlight for my parents.",
-    tourTaken: "Spiritual Kashi Yatra",
+      "The Spiritual Divine Yatra gave us so much more context than a regular sightseeing tour. The pandit-assisted puja at the ghat was a highlight for my parents.",
+    tourTaken: "Spiritual Divine Yatra",
     avatar: "/images/avatars/meera.jpg",
   },
   {

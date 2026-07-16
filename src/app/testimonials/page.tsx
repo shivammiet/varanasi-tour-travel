@@ -9,7 +9,7 @@ import { testimonials } from "@/data/testimonials";
 export const metadata = buildMetadata({
   title: "Testimonials",
   description:
-    "Read what travellers say about their Varanasi tours with Kashi Yatra Tours — Ganga Aarti, sunrise boat rides, Sarnath, Ayodhya, and more.",
+    "Read what travellers say about their Varanasi tours with Divine Yatra Tours — Ganga Aarti, sunrise boat rides, Sarnath, Ayodhya, and more.",
   path: "/testimonials",
 });
 

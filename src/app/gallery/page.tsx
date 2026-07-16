@@ -16,7 +16,7 @@ const galleryImages = [
   { src: "/images/kashi-vishwanath.jpg", alt: "Kashi Vishwanath Temple spire" },
   { src: "/images/sunrise-ghat.jpg", alt: "Boats along Assi Ghat" },
   { src: "/images/boat-ride.jpg", alt: "Sunrise boat ride", span: "row-span-2" },
-  { src: "/images/sarnath.jpg", alt: "Dhamek Stupa, Sarnath" },
+  { src: "/images/sarnath.jpg", alt: "Dhamek Stupa, sarnath" },
   { src: "/images/dashashwamedh-ghat.jpg", alt: "Ramnagar Fort exterior" },
   { src: "/images/aarti-night-close.jpg", alt: "Ghats along the Ganga" },
   { src: "/images/varanasi-city.jpg", alt: "Old city lanes of Varanasi", span: "row-span-2" },

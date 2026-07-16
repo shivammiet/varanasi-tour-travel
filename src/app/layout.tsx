@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
+import { siteConfig } from "@/config/site"; // Naya wala site config
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/layout/FloatingWhatsApp";
-import { siteConfig } from "@/data/site";
 import { localBusinessJsonLd } from "@/lib/jsonld";
 
 const displayFont = Cormorant_Garamond({
@@ -23,22 +23,44 @@ const bodyFont = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+
   title: {
-    default: `${siteConfig.name} | Premium Varanasi Tour & Travel Packages`,
+    default: `${siteConfig.name} | Premium Varanasi, Ayodhya & Spiritual India Tours`,
     template: `%s | ${siteConfig.name}`,
   },
+
   description: siteConfig.description,
   keywords: siteConfig.keywords,
   authors: [{ name: siteConfig.name }],
 
+  alternates: {
+    canonical: "/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  verification: {
+    google: "dIKkSFM3l4Z04TfJaA06F48yfB-rynQ4TQLxFWDs_Zc", // Aapka exact Google Search Console tag!
+  },
+
   openGraph: {
-    title: `${siteConfig.name} | Premium Varanasi Tour & Travel Packages`,
+    title: `${siteConfig.name} | Premium Varanasi & Spiritual India Tours`,
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,
     images: [
       {
-        url: siteConfig.ogImage,
+        url: "/images/hero.jpg", // Setting hero image as default preview thumbnail
         width: 1200,
         height: 630,
       },
@@ -49,18 +71,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Premium Varanasi Tour & Travel Packages`,
+    title: `${siteConfig.name} | Premium Varanasi & Spiritual India Tours`,
     description: siteConfig.description,
-    images: [siteConfig.ogImage],
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
-
-  verification: {
-    google: "dIKkSFM3l4Z04TfJaA06F48yfB-rynQ4TQLxFWDs_Zc",
+    images: ["/images/hero.jpg"],
   },
 };
 

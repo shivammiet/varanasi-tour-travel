@@ -8,7 +8,7 @@ import { siteConfig } from "@/data/site";
 export const metadata = buildMetadata({
   title: "Contact Us",
   description:
-    "Get in touch with Kashi Yatra Tours via WhatsApp, phone, or email to plan your Varanasi tour. Located near Dashashwamedh Ghat, Varanasi.",
+    "Get in touch with Divine Yatra Tours via WhatsApp, phone, or email to plan your Varanasi tour. Located near Dashashwamedh Ghat, Varanasi.",
   path: "/contact",
 });
 
