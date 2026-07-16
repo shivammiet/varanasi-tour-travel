@@ -34,7 +34,7 @@ export const attractions: Attraction[] = [
   {
     slug: "triveni-sangam-prayagraj",
     name: "Triveni Sangam, Prayagraj",
-    image: "/images/prayag.jpeg",
+    image: "/images/mobile5.jpg",
     shortDescription: "The holy confluence of the Ganga, Yamuna, and Saraswati rivers.",
     description:
       "Located in Prayagraj, the Triveni Sangam is one of the most sacred pilgrimage destinations in Hinduism. Taking a holy dip here is believed to wash away sins. You can take a boat ride to the exact point where the differently colored waters of the rivers meet.",

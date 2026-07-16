@@ -10,25 +10,31 @@ import { FlameIcon } from "@/components/ui/FlameIcon";
 import { GhatDivider } from "@/components/ui/GhatDivider";
 import { whatsappLink, telLink } from "@/data/site";
 
+// FIX 1: Ab har slide ke paas 2 alag images hain
 const slides = [
   {
-    image: "/images/boat-ride.jpg",
+    desktopImage: "/images/boat-ride.jpg",
+    mobileImage: "/images/mobile3.jpg",
     caption: "Sunrise Boat Ride on the Ganga",
   },
   {
-    image: "/images/hero.jpg",
+    desktopImage: "/images/lap1.jpg",
+    mobileImage: "/images/mobile1.jpg",
     caption: "Sunrise Over the Ghats of Varanasi",
   },
   {
-    image: "/images/kashii.jpg",
+    desktopImage: "/images/lap3.jpg",
+    mobileImage: "/images/mobile5.jpg",
     caption: "A Boatman on the Ganga at Dusk",
   },
   {
-    image: "/images/avatars/ayodha.jpg",
+    desktopImage: "/images/lap5.jpg",
+    mobileImage: "/images/mobile7.jpg",
     caption: "The Grand Ram Janmabhoomi Mandir, Ayodhya",
   },
   {
-    image: "/images/boat-ride.jpg",
+    desktopImage: "/images/boat-ride.jpg",
+    mobileImage: "/images/mobile4.jpg",
     caption: "Morning Serenity on the Sacred River",
   }
 ];
@@ -44,8 +50,7 @@ export function Hero() {
   }, []);
 
   return (
-    // FIX 1: Responsive Height (85vh for mobile, 92vh for desktop)
-    <section className="relative flex min-h-[85vh] md:min-h-[92vh] items-end overflow-hidden bg-indigo">
+    <section className="relative flex min-h-[70vh] md:min-h-[92vh] items-end overflow-hidden bg-indigo">
       <AnimatePresence mode="sync">
         <motion.div
           key={index}
@@ -55,21 +60,35 @@ export function Hero() {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="absolute inset-0"
         >
-          <Image
-            src={slides[index].image}
-            alt={slides[index].caption}
-            fill
-            priority={index === 0}
-            // FIX 2: Added object-center to keep focus in the middle on mobile
-            className="object-cover object-center"
-            sizes="100vw"
-          />
+          {/* FIX 2: Desktop Image (hidden on mobile, block on medium screens and up) */}
+          <div className="hidden md:block absolute inset-0">
+            <Image
+              src={slides[index].desktopImage}
+              alt={slides[index].caption}
+              fill
+              priority={index === 0}
+              className="object-cover object-center"
+              sizes="100vw"
+            />
+          </div>
+
+          {/* FIX 3: Mobile Image (block on mobile, hidden on medium screens and up) */}
+          <div className="block md:hidden absolute inset-0">
+            <Image
+              src={slides[index].mobileImage}
+              alt={slides[index].caption}
+              fill
+              priority={index === 0}
+              className="object-cover object-center"
+              sizes="100vw"
+            />
+          </div>
+          
           <div className="absolute inset-0 bg-gradient-to-t from-indigo-dark via-indigo-dark/70 to-black/40" />
         </motion.div>
       </AnimatePresence>
 
-      {/* FIX 3: Responsive Padding (Less padding on mobile) */}
-      <Container className="relative z-10 pb-20 pt-32 md:pb-28 md:pt-40">
+      <Container className="relative z-10 pb-12 pt-28 md:pb-28 md:pt-40">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -90,7 +109,6 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          // FIX 4: Responsive Text Size (text-4xl on mobile, text-6xl/7xl on larger screens)
           className="mt-6 max-w-4xl font-display text-4xl font-bold leading-[1.1] text-white sm:text-6xl lg:text-7xl drop-shadow-lg"
         >
           Journey to the Heart <br className="hidden sm:block" />
@@ -103,7 +121,6 @@ export function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          // FIX 5: Slightly smaller text on mobile
           className="mt-4 md:mt-6 max-w-xl text-base md:text-lg text-white/90 font-medium leading-relaxed drop-shadow-md"
         >
           Experience curated spiritual tours across Varanasi, Ayodhya, and Prayagraj. Zero stress, no hidden fees. Message us directly for local B2B rates and seamless planning.

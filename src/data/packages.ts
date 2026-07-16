@@ -115,7 +115,7 @@ export const packages: TourPackage[] = [
     image: "/images/dashashwamedh-ghat.jpg",
     gallery: [
       "/images/dashashwamedh-ghat.jpg",
-      "/images/aarti-night-close.jpg",
+      "/images/kashi4.jpg",
       "/images/aarti-lamps.jpg",
     ],
     category: "Spiritual",
@@ -172,9 +172,9 @@ export const packages: TourPackage[] = [
     days: 3,
     startingPrice: 0,
     priceUnit: "",
-    image: "/images/aarti-night-close.jpg",
+    image: "/images/kashi5.jpg",
     gallery: [
-      "/images/aarti-night-close.jpg",
+      "/images/kashi5.jpg",
       "/images/sunrise-ghat.jpg",
       "/images/prayag.jpeg",
     ],

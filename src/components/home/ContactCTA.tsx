@@ -11,7 +11,7 @@ export function ContactCTA() {
       <Container className="relative text-center">
         <FlameIcon className="mx-auto h-10 w-10 text-saffron" />
         <h2 className="mx-auto mt-5 max-w-2xl font-display text-3xl font-semibold text-white sm:text-4xl">
-          Ready to Experience the Ghats of Kashi?
+          "Immerse Yourself in the Timeless Heritage of Sacred India." (Pavitra Bharat ki anant virasat mein khud ko duba dein)
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-white/75">
           Tell us your travel dates and group size on WhatsApp, and we'll plan

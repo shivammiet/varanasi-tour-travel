@@ -5,8 +5,8 @@ export const siteConfig = {
   name: "Divine Yatra Tours",
   tagline: "Walk the Ghats. Witness the Eternal Flame.",
   description:
-    "Divine Yatra Tours is a premium Varanasi tour and travel company offering curated spiritual journeys, Ganga Aarti experiences, sunrise boat rides, and heritage sightseeing across Varanasi, Sarnath, Ayodhya, and Prayagraj.",
-  url:  "https://www.divineyatratours.com",
+ "Divine Yatra Tours is a premium travel agency offering curated spiritual journeys across India's holiest destinations. We specialize in seamless, immersive experiences—from the divine Ganga Aarti and sunrise boat rides in Varanasi to heritage sightseeing across Sarnath, Ayodhya, and Prayagraj.",
+   url:  "https://www.divineyatratours.com",
   ogImage: "/images/hero.jpg",
   keywords: [
     "Varanasi tour packages",

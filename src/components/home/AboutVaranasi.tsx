@@ -8,7 +8,7 @@ export function AboutVaranasi() {
       <Container className="grid items-center gap-14 lg:grid-cols-2">
         <div className="relative h-[420px] overflow-hidden rounded-3xl sm:h-[520px]">
           <Image
-            src="/images/aarti-night-close.jpg"
+            src="/images/kashi5.jpg"
             alt="View of the ghats of Varanasi along the Ganga"
             fill
             className="object-cover"
