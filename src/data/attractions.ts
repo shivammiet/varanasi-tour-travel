@@ -25,7 +25,7 @@ export const attractions: Attraction[] = [
     slug: "ram-janmabhoomi-ayodhya",
     name: "Ram Janmabhoomi, Ayodhya",
     // Fix: Naya aur clean naam jisme capital/small letter ka koi chakkar nahi
-    image: "/images/ayodhya-ram-mandir.jpg", 
+    image: "/images/mobile6.jpg", 
     shortDescription: "The sacred birthplace of Lord Ram and the grand Ram Mandir.",
     description:
       "Ayodhya is the spiritual heart of the Ramayana. The newly built grand Ram Mandir at the Ram Janmabhoomi site attracts millions of devotees. The city is also famous for Hanuman Garhi and the serene evening aarti at the Saryu River ghats.",
