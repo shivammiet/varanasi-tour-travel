@@ -13,28 +13,28 @@ import { whatsappLink, telLink } from "@/data/site";
 // FIX 1: Ab har slide ke paas 2 alag images hain
 const slides = [
   {
-    desktopImage: "/images/boat-ride.jpg",
-    mobileImage: "/images/mobile3.jpg",
+    desktopImage: "/images/ChatGPT.png",
+    mobileImage: "/images/ChatGPT.png",
     caption: "Sunrise Boat Ride on the Ganga",
   },
   {
-    desktopImage: "/images/lap1.jpg",
-    mobileImage: "/images/mobile1.jpg",
+    desktopImage: "/images/ChatGPT2.png",
+    mobileImage: "/images/ChatGPT2.png",
     caption: "Sunrise Over the Ghats of Varanasi",
   },
   {
-    desktopImage: "/images/lap3.jpg",
-    mobileImage: "/images/mobile5.jpg",
+    desktopImage: "/images/pryagg.png",
+    mobileImage: "/images/pryagg.png",
     caption: "A Boatman on the Ganga at Dusk",
   },
   {
-    desktopImage: "/images/lap5.jpg",
-    mobileImage: "/images/mobile7.jpg",
+    desktopImage: "/images/ram.png",
+    mobileImage: "/images/ram.png",
     caption: "The Grand Ram Janmabhoomi Mandir, Ayodhya",
   },
   {
-    desktopImage: "/images/boat-ride.jpg",
-    mobileImage: "/images/mobile4.jpg",
+    desktopImage: "/images/pray.png",
+    mobileImage: "/images/pray.png",
     caption: "Morning Serenity on the Sacred River",
   }
 ];
@@ -50,8 +50,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-[70vh] md:min-h-[92vh] items-end overflow-hidden bg-indigo">
-      <AnimatePresence mode="sync">
+<section className="relative flex h-screen md:min-h-[92vh] items-end overflow-hidden bg-indigo">      <AnimatePresence mode="sync">
         <motion.div
           key={index}
           initial={{ opacity: 0, scale: 1.05 }}
@@ -73,13 +72,14 @@ export function Hero() {
           </div>
 
           {/* FIX 3: Mobile Image (block on mobile, hidden on medium screens and up) */}
-          <div className="block md:hidden absolute inset-0">
+          {/* Mobile Image */}
+          <div className="absolute inset-0 block overflow-hidden bg-indigo md:hidden">
             <Image
               src={slides[index].mobileImage}
               alt={slides[index].caption}
               fill
               priority={index === 0}
-              className="object-cover object-center"
+              className="object-contain object-center"
               sizes="100vw"
             />
           </div>
@@ -101,7 +101,7 @@ export function Hero() {
           </span>
           <span className="inline-flex animate-pulse items-center gap-1.5 rounded-full bg-green-500/20 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-green-300 border border-green-400/30 backdrop-blur">
             <Sparkles className="h-3.5 w-3.5" />
-            Flat 10% Off via WhatsApp
+            Flat 10% 
           </span>
         </motion.div>
 
@@ -139,7 +139,7 @@ export function Hero() {
             className="shadow-[0_0_20px_rgba(34,197,94,0.3)] hover:shadow-[0_0_25px_rgba(34,197,94,0.5)] transition-all duration-300 w-full sm:w-auto"
             icon={<MessageCircle className="h-5 w-5" />}
           >
-            Claim 10% Off on WhatsApp
+            Claim 10% Off
           </Button>
           <div className="flex gap-3 w-full sm:w-auto">
             <Button 

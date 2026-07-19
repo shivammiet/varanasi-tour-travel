@@ -8,12 +8,13 @@ import { Button } from "@/components/ui/Button";
 export function PackageCard({ pkg }: { pkg: TourPackage }) {
   return (
     <div className="group flex flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-sm transition-shadow hover:shadow-xl">
-      <div className="relative h-56 overflow-hidden">
+      {/* YAHAN CHANGE KIYA HAI: Mobile ke liye h-48 aur badi screen ke liye sm:h-56 */}
+      <div className="relative aspect-[3/4] w-full overflow-hidden">
         <Image
           src={pkg.image}
           alt={pkg.title}
           fill
-          className="object-cover transition-transform duration-700 group-hover:scale-110"
+          className="object-cover object-top transition-transform duration-700 group-hover:scale-110"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-indigo backdrop-blur">

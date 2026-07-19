@@ -12,9 +12,10 @@ export function TopAttractions() {
     <section className="bg-indigo py-20 sm:py-28">
       <Container>
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
+          {/* YAHAN CHANGE KIYA HAI: Title aur Eyebrow ko sabhi cities ke liye update kiya hai */}
           <SectionHeading
-            eyebrow="Must-See Kashi"
-            title="Top Attractions in Varanasi"
+            eyebrow="Sacred Landmarks"
+            title="Top Attractions Across the Holy Cities"
             light
           />
           <Link
@@ -36,7 +37,7 @@ export function TopAttractions() {
                 src={place.image}
                 alt={place.name}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                className="object-cover object-top transition-transform duration-700 group-hover:scale-110"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />

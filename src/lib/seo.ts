@@ -6,6 +6,7 @@ interface BuildMetadataArgs {
   description: string;
   path?: string;
   image?: string;
+  keywords?: string[];
 }
 
 export function buildMetadata({
@@ -13,6 +14,7 @@ export function buildMetadata({
   description,
   path = "",
   image,
+  keywords,
 }: BuildMetadataArgs): Metadata {
   const url = `${siteConfig.url}${path}`;
   const ogImage = image ?? siteConfig.ogImage;
@@ -20,6 +22,7 @@ export function buildMetadata({
   return {
     title,
     description,
+    keywords,
     alternates: {
       canonical: url,
     },

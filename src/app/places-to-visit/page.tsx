@@ -7,9 +7,9 @@ import { buildMetadata } from "@/lib/seo";
 import { attractions } from "@/data/attractions";
 
 export const metadata = buildMetadata({
-  title: "Places to Visit in Varanasi",
+  title: "Places to Visit in Varanasi, Ayodhya & Prayagraj",
   description:
-    "Explore Kashi Vishwanath Temple, Ganga Aarti at Dashashwamedh Ghat, Assi Ghat, Sarnath, Ramnagar Fort, and the sunrise boat ride — the top places to visit in Varanasi.",
+    "Explore Kashi Vishwanath Temple, Ram Janmabhoomi in Ayodhya, Triveni Sangam in Prayagraj, and more divine destinations across these sacred cities.",
   path: "/places-to-visit",
 });
 
@@ -17,9 +17,9 @@ export default function PlacesToVisitPage() {
   return (
     <>
       <PageHero
-        eyebrow="Around Kashi"
-        title="Places to Visit in Varanasi"
-        description="From ancient temples to riverside ghats, here's where to spend your time in the city."
+        eyebrow="Sacred Landmarks"
+        title="Must-Visit Divine Destinations"
+        description="From the ancient ghats of Kashi to the grand Ram Mandir in Ayodhya and the holy Triveni Sangam in Prayagraj, explore the spiritual heart of India."
         image="/images/dashashwamedh-ghat.jpg"
       />
 

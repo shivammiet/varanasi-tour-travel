@@ -22,7 +22,7 @@ export const siteConfig = {
     phone: "+91 9118958565",
     phoneRaw: "+919118958565",
     whatsapp: "9118958565",
-    email: "shivamwalther@gmail.com", 
+    email: "divineyatratours19@gmail.com", 
     address: "D-12/45, Near Dashashwamedh Ghat, Varanasi, Uttar Pradesh 221001, India",
     mapEmbedUrl:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.994!2d83.0068!3d25.3109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE4JzM5LjYiTiA4M8KwMDAnMjQuNSJF!5e0!3m2!1sen!2sin!4v1620000000000",
