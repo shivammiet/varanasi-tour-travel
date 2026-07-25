@@ -6,7 +6,8 @@ import { whatsappLink } from "@/data/site";
 export function FloatingWhatsApp() {
   return (
     <a
-      href={whatsappLink("Namaste! I'd like to know more about your Varanasi tour packages.")}
+      // Updated the pre-filled message to include the full spiritual circuit
+      href={whatsappLink("Namaste Divine Yatra Tours! 🙏 I am interested in planning a spiritual trip to Kashi, Ayodhya, and Prayagraj. Could you please share some details?")}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with us on WhatsApp"

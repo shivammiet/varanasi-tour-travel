@@ -97,11 +97,11 @@ export function Hero() {
         >
           <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold-light backdrop-blur">
             <FlameIcon className="h-4 w-4 text-saffron" />
-            Kashi & Ayodhya
+            Kashi, Ayodhya, & Prayagraj
           </span>
           <span className="inline-flex animate-pulse items-center gap-1.5 rounded-full bg-green-500/20 px-3 py-1.5 text-xs font-bold uppercase tracking-wider text-green-300 border border-green-400/30 backdrop-blur">
             <Sparkles className="h-3.5 w-3.5" />
-            Flat 10% 
+            Flat 10% OFF!
           </span>
         </motion.div>
 

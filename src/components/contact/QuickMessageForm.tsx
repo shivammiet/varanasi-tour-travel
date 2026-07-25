@@ -47,7 +47,8 @@ export function QuickMessageForm() {
           type="text"
           value={tour}
           onChange={(e) => setTour(e.target.value)}
-          placeholder="e.g. Varanasi 2 Days Tour"
+          // Placeholder updated to reflect the full spiritual circuit
+          placeholder="e.g. Kashi, Ayodhya & Prayagraj Tour"
           className="mt-1.5 w-full rounded-xl border border-black/10 bg-cream/60 px-4 py-2.5 text-sm text-ink outline-none focus:border-saffron"
         />
       </div>
@@ -77,7 +78,8 @@ export function QuickMessageForm() {
           Send on WhatsApp
         </Button>
         <Button
-          href={mailLink("Varanasi Tour Enquiry") + `&body=${encodeURIComponent(buildMessage())}`}
+          // Email subject line updated
+          href={mailLink("Spiritual Tour Enquiry - Kashi, Ayodhya & Prayagraj") + `&body=${encodeURIComponent(buildMessage())}`}
           variant="outline"
           className="flex-1"
           icon={<Mail className="h-4 w-4" />}

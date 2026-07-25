@@ -6,7 +6,8 @@ const cards = [
     icon: MessageCircle,
     title: "WhatsApp",
     value: siteConfig.contact.phone,
-    href: whatsappLink("Namaste! I'd like to know more about your Varanasi tours."),
+    // Updated WhatsApp pre-filled message
+    href: whatsappLink("Namaste Divine Yatra Tours! 🙏 I am interested in planning a spiritual trip to Kashi, Ayodhya, and Prayagraj. Could you please share some details?"),
     target: "_blank",
     accent: "bg-[#25D366]",
   },
@@ -21,7 +22,8 @@ const cards = [
     icon: Mail,
     title: "Email",
     value: siteConfig.contact.email,
-    href: mailLink("Varanasi Tour Enquiry"),
+    // Updated Email subject line
+    href: mailLink("Spiritual Tour Enquiry - Kashi, Ayodhya & Prayagraj"),
     accent: "bg-indigo",
   },
   {

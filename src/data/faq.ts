@@ -12,28 +12,28 @@ export const faqs: FaqItem[] = [
       "Most tours can be confirmed with a small advance to hold your date, with the balance payable in cash or UPI on the day of the tour. Exact terms will be shared when you message us on WhatsApp.",
   },
   {
-    question: "What is the best time of year to visit Varanasi?",
+    question: "What is the best time of year to visit Kashi, Ayodhya, and Prayagraj?",
     answer:
-      "October to March offers the most pleasant weather for sightseeing and boat rides. Sunrise boat rides are magical year-round, though winter mornings can be foggy and cold, so we recommend carrying a light jacket.",
+      "October to March offers the most pleasant weather for exploring these sacred cities. Early morning boat rides in Kashi and Prayagraj are magical year-round, though winter mornings can be foggy and cold, so we recommend carrying a light jacket.",
   },
   {
-    question: "Is the Ganga Aarti included in every package?",
+    question: "Are the evening Aartis included in the packages?",
     answer:
-      "Yes, all our multi-day and 1-day packages include time to witness the evening Ganga Aarti at Dashashwamedh Ghat, either from the ghat steps or from a boat, depending on the package.",
+      "Yes! Depending on your itinerary, our multi-day packages include time to witness the magnificent Ganga Aarti at Dashashwamedh Ghat in Kashi, the serene Saryu Aarti in Ayodhya, and the sacred evening rituals at Triveni Sangam in Prayagraj.",
   },
   {
     question: "Can you customise a package for our family or group?",
     answer:
-      "Absolutely. Every package on this site can be adjusted for duration, pace, and inclusions. Message us on WhatsApp with your requirements and we will put together a custom itinerary.",
+      "Absolutely. Whether you want a complete circuit of all three cities or a focused visit to one, every package can be adjusted for duration, pace, and inclusions. Message us on WhatsApp with your requirements.",
   },
   {
     question: "Do you arrange airport or railway station pickup?",
     answer:
-      "Yes, pickup from Lal Bahadur Shastri International Airport (Babatpur) and Varanasi Junction is available and is included in most multi-day packages. Let us know your arrival details in advance.",
+      "Yes, pickup from airports and railway stations across Varanasi (Babatpur), Ayodhya (Maharishi Valmiki Airport), and Prayagraj is available and included in most multi-day packages. Let us know your arrival details in advance.",
   },
   {
-    question: "Is Varanasi safe for solo and international travellers?",
+    question: "Are these spiritual destinations safe for solo and international travellers?",
     answer:
-      "Varanasi welcomes travellers from around the world every day. Our guides accompany you through the old city lanes and ghats, and our vehicles and drivers are vetted for reliability and safety.",
+      "Absolutely. Kashi, Ayodhya, and Prayagraj welcome millions of devotees and travellers from around the world safely every year. Our local guides accompany you through the old lanes and sacred sites, and our vehicles are vetted for reliability and safety.",
   },
 ];
