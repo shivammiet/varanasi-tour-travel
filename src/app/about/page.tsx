@@ -37,7 +37,7 @@ export default function AboutPage() {
         eyebrow="Our Story"
         title="About Divine Yatra Tours"
         description="A local team dedicated to showing you the true spiritual essence of Kashi, Ayodhya, and Prayagraj."
-        image="/images/CHATGPT2.png" 
+        image="/images/ChatGPT2.png" 
       />
 
       <section className="bg-cream py-20 sm:py-28">
@@ -57,7 +57,7 @@ export default function AboutPage() {
           
 <div className="relative h-[600px] overflow-hidden rounded-3xl"> 
   <Image
-    src="/images/CHATGPT2.png"
+    src="/images/ChatGPT2.png"
     alt="Guide leading travellers through sacred spiritual destinations"
     fill
     className="object-cover"
