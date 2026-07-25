@@ -6,7 +6,7 @@ const cards = [
     icon: MessageCircle,
     title: "WhatsApp",
     value: siteConfig.contact.phone,
-    // Updated WhatsApp pre-filled message
+    
     href: whatsappLink("Namaste Divine Yatra Tours! 🙏 I am interested in planning a spiritual trip to Kashi, Ayodhya, and Prayagraj. Could you please share some details?"),
     target: "_blank",
     accent: "bg-[#25D366]",
