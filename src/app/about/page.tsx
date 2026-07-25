@@ -54,7 +54,7 @@ export default function AboutPage() {
               We deliberately kept things simple. There's no login, no booking engine, and no call centre. When you message us on WhatsApp, you're talking to someone who will personally be involved in planning your trip.
             </p>
           </div>
-          {/* 1. PARENT CONTAINER HEIGHT INCREASED */}
+          
 <div className="relative h-[600px] overflow-hidden rounded-3xl"> 
   <Image
     src="/images/CHATGPT2.png"
