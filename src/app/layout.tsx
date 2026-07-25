@@ -24,6 +24,14 @@ const bodyFont = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  
+  // 1. ADDED: Helps Google identify the exact Brand Name
+  applicationName: siteConfig.name, 
+  
+  // 2. ADDED: Tells Next.js to use your existing logo from the public folder as the favicon
+  icons: {
+    icon: "/images/logo.png",
+  },
 
   title: {
     default: `${siteConfig.name} | Premium Varanasi, Ayodhya & Spiritual India Tours`,
@@ -102,12 +110,27 @@ export default function RootLayout({
         </Script>
       </head>
       <body className="font-body antialiased">
+        {/* Existing Local Business Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(localBusinessJsonLd()),
           }}
         />
+        
+        {/* 3. ADDED: WebSite Schema to force Google to show Brand Name instead of URL */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": siteConfig.name,
+              "url": siteConfig.url
+            }),
+          }}
+        />
+
         <Header />
         <main>{children}</main>
         <Footer />

@@ -13,13 +13,13 @@ import { whatsappLink, telLink } from "@/data/site";
 // FIX 1: Ab har slide ke paas 2 alag images hain
 const slides = [
   {
-    desktopImage: "/images/ChatGPT.png",
-    mobileImage: "/images/ChatGPT.png",
+    desktopImage: "/images/ChatGPT2.png",
+    mobileImage: "/images/ChatGPT2.png",
     caption: "Sunrise Boat Ride on the Ganga",
   },
   {
-    desktopImage: "/images/ChatGPT2.png",
-    mobileImage: "/images/ChatGPT2.png",
+    desktopImage: "/images/pray.png",
+    mobileImage: "/images/pray.png",
     caption: "Sunrise Over the Ghats of Varanasi",
   },
   {

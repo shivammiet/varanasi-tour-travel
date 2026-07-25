@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image"; // Image import rakha hai
 import { Menu, X, Phone } from "lucide-react";
 import { Container } from "@/components/ui/Container";
-import { FlameIcon } from "@/components/ui/FlameIcon";
+// FlameIcon ka import hata diya kyunki ab aapka original logo use ho raha hai
 import { Button } from "@/components/ui/Button";
 import { siteConfig, telLink } from "@/data/site";
 
@@ -25,10 +26,21 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-black/5 bg-cream/95 backdrop-blur">
       <Container className="flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <FlameIcon className="h-7 w-7 text-saffron" />
+          
+          {/* 1. AAPKA CUSTOM LOGO (LEFT ME) */}
+          <Image
+            src="/images/logo.png"
+            alt={`${siteConfig.name} Logo`}
+            width={65}
+            height={65}
+            className="object-contain" 
+          />
+          
+          {/* 2. BRAND NAME (RIGHT ME) */}
           <span className="font-display text-xl font-bold text-indigo sm:text-2xl">
             {siteConfig.name}
           </span>
+          
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
