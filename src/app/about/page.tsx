@@ -8,15 +8,15 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "About Us",
   description:
-    "Learn about Divine Yatra Tours — a Varanasi-based travel team offering curated, guide-led tours of the ghats, temples, and spiritual heart of Kashi.",
+    "Learn about Divine Yatra Tours — a dedicated travel team offering curated, guide-led tours of the sacred cities of Kashi (Varanasi), Ayodhya, and Prayagraj.",
   path: "/about",
 });
 
 const values = [
   {
-    title: "Rooted in Kashi",
+    title: "Rooted in Sacred Lands",
     description:
-      "Our team lives and works in Varanasi. We plan tours the way we'd plan a visit for our own family — around the rhythm of the ghats, not a fixed script.",
+      "Our team operates locally across Varanasi, Ayodhya, and Prayagraj. We plan tours the way we'd plan a visit for our own family — embracing the spiritual rhythm of these holy cities, not a fixed script.",
   },
   {
     title: "No Middlemen",
@@ -26,7 +26,7 @@ const values = [
   {
     title: "Respect for Ritual",
     description:
-      "Varanasi's rituals are sacred to millions. We guide travellers to observe respectfully, with context, rather than treating the ghats as a photo backdrop.",
+      "The traditions of Kashi, the devotion in Ayodhya, and the sacred Sangam in Prayagraj are revered by millions. We guide travellers to observe respectfully, with deep context.",
   },
 ];
 
@@ -36,8 +36,8 @@ export default function AboutPage() {
       <PageHero
         eyebrow="Our Story"
         title="About Divine Yatra Tours"
-        description="A local team dedicated to showing you Varanasi the way it deserves to be seen."
-        image="/images/varanasi-city.jpg"
+        description="A local team dedicated to showing you the true spiritual essence of Kashi, Ayodhya, and Prayagraj."
+        image="/images/CHATGPT2.png" 
       />
 
       <section className="bg-cream py-20 sm:py-28">
@@ -45,31 +45,25 @@ export default function AboutPage() {
           <div>
             <SectionHeading
               eyebrow="Who We Are"
-              title="A Small Team That Knows Every Ghat by Name"
+              title="Connecting You to the Heart of Spiritual India"
             />
             <p className="mt-6 text-base leading-relaxed text-ink/75">
-              Divine Yatra Tours began with a simple idea: travellers visiting
-              Varanasi deserve guides who actually live here — who know which
-              ghat gets the best light at sunrise, which lane leads to the
-              best kachori shop, and how to move respectfully through a
-              cremation ghat without disrupting a family's grief.
+              Divine Yatra Tours began with a simple idea: travellers visiting our sacred cities deserve guides who actually know the region inside out. Whether it's finding the best light at a Varanasi ghat at sunrise, navigating the profound devotion at Ayodhya's Ram Janmabhoomi, or experiencing the spiritual magnitude of the Triveni Sangam in Prayagraj, we bring local expertise to every journey.
             </p>
             <p className="mt-4 text-base leading-relaxed text-ink/75">
-              We deliberately kept things simple. There's no login, no
-              booking engine, and no call centre. When you message us on
-              WhatsApp, you're talking to someone who will personally be
-              involved in planning your trip.
+              We deliberately kept things simple. There's no login, no booking engine, and no call centre. When you message us on WhatsApp, you're talking to someone who will personally be involved in planning your trip.
             </p>
           </div>
-          <div className="relative h-[420px] overflow-hidden rounded-3xl">
-            <Image
-              src="/images/dashashwamedh-ghat.jpg"
-              alt="Guide leading travellers through Varanasi"
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-          </div>
+          {/* 1. PARENT CONTAINER HEIGHT INCREASED */}
+<div className="relative h-[600px] overflow-hidden rounded-3xl"> 
+  <Image
+    src="/images/CHATGPT2.png"
+    alt="Guide leading travellers through sacred spiritual destinations"
+    fill
+    className="object-cover"
+    sizes="(max-width: 1024px) 100vw, 50vw" // I've also updated the 'sizes' to more standard, working values for the layout described in previous context.
+  />
+</div>
         </Container>
       </section>
 

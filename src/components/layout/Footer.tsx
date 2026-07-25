@@ -115,7 +115,7 @@ export function Footer() {
           <p>
             © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
           </p>
-          <p>Made with reverence for the ghats of Kashi.</p>
+          <p>Made with reverence for the sacred lands of Kashi, Ayodhya, and Prayagraj.</p>
         </Container>
       </div>
     </footer>
